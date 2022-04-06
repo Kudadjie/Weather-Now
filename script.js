@@ -14,6 +14,10 @@ weatherApp.changeLocation.addEventListener("click", () => {
   weatherApp.openModal(weatherApp.searchModal);
 });
 
+//Search button
+weatherApp.searchButton.addEventListener("click", () => {
+  search()
+}
 //Use current location
 weatherApp.useCurrentLocation.addEventListener("click", () => {
   weatherApp.closeModal(weatherApp.searchModal);
