@@ -28,6 +28,7 @@ weatherApp.useCurrentLocation.addEventListener("click", () => {
 
 //Close search
 weatherApp.closeButton.addEventListener("click", () => {
+  weatherApp.emptyQueryError.classList.add("hide")
   weatherApp.closeModal(weatherApp.searchModal);
 });
 

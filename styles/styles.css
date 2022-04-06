@@ -180,7 +180,7 @@ header {
 .search-location {
 	padding: 20px;
 	width: 500px;
-	height: 280px;
+	height: 295px;
 }
 
 .location-close-button {
@@ -214,7 +214,7 @@ header {
 .fa-magnifying-glass {
 	position:relative;
 	right:-31px;
-	top:4px;
+	top:1px;
 	color:#00000026;
 	padding-bottom:5px;
 }
@@ -408,7 +408,7 @@ header {
 	margin-bottom: 50px;
 }
 
-.change-location:hover {
+.location-change-click:hover {
 	text-decoration: underline;
 }
 .location-pin {
