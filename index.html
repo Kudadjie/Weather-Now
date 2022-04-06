@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./images/favicon.png" />
+	<link href="./styles/styles.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+	<title>Weather Now</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<div>
+				<img src="./images/WEATHER NOW.svg" class="logo">
+			</div>
+		</nav>
+	</header>
+	<!-- modal -->
+	<div class="modal-overlay loading-screen">
+		<div class="modal-container loading-screen-modal">
+			<img class= "warning hide" src="./images/icons/warning.svg">
+			<p class="text-on-white hide internet-problem-text">An error occured<br>Please try again</p>
+			<div class="preloader">
+				<img src="./images/icons/spinner.svg" alt="spinner">
+				
+			</div>
+			<p class="allow-location-text text-on-white">Allow location access to use Weather Today</p>
+		</div>
+	</div>
+	<div class="modal-overlay location-search close-modal">
+		<i class="fas fa-times close-btn location-close-button"></i>
+		<div class="search-location modal-container">
+			
+			<img src="./images/WEATHER NOW.svg" class="logo logo-modal">
+			
+			<div class="form">
+				<i class="fa-solid fa-magnifying-glass"></i>
+				<input name="search" type="text" class="search-bar"> 
+				<p class="error-message-for-search text-on-white hide">Enter a valid city or country</p>
+				
+			</div>		
+			<button class="search-btn" onclick="search()"><p>Search</p></button>
+			<p class="text-on-white small-text">Location entered should be a valid city or country.</p>
+			<button class="unbutton text-on-white use-current-location">Use current location</button>
+			
+		</div>
+	</div>
+
+
+
+	<!--End of modals-->
+	<main>
+		<div class="main-content">
+			<div class="forecast-day">
+				<div class="forecast-header">
+					<h4 class="text-spacing location">--</h4>
+					<div class="day-night-holder">
+						<img src="./images/icons/dayNight/moon.png" class="day-night-icon moon">
+						<img src="./images/icons/dayNight/sun.png" class="day-night-icon sun">
+					</div>
+				</div>
+				<p class="last-updated-holder"><i>last updated <span class="last-updated"></span></i>
+					<button class="unbutton"><i class="fa-solid fa-arrow-rotate-right reload"></i></button></p>
+				<span class="span-block change-location"><img src="./images/icons/location.svg" class="location-pin"><button class="unbutton location-change-click">change location </button></span>
+
+
+				<div class="forecast-current">
+					<div id="forecast-holder">
+						<img src="./images/32/Color=On-1.svg" class="icon">
+						<span class="temp-big-text">--</span>
+						<div class="temp-holder">
+							<span style="position: absolute; font-size:larger">0</span>
+							<button class="unbutton text-spacing temp-c span-block temp-unit current-unit">C</button>
+							<button class="unbutton text-spacing temp-f span-block temp-unit option-unit">F</button>
+						</div>
+						<div class="glass">
+							<div class="weather-info">
+								<div class="condition-holder">
+									<span class="condition">--</span>
+								</div>
+								
+							</div>
+							<div class="detail-view-holder">
+								<div class="detail-view left">
+									<p style="margin-bottom: 5px;">Chance of rain : <span class="make-font-clear chance-of-rain"></span></p>
+									<p style="margin-bottom: 5px;">Sunrise | Sunset : <span class="make-font-clear sunrise"></span> | <span class="make-font-clear sunset"></span></p>
+									<p style="margin-bottom: 5px;">Moonrise | Moonset : <span class="make-font-clear moonrise"></span> | <span class="make-font-clear moonset"></span></p>
+								</div>
+								<div class="detail-view right">
+									<p class="text-spacing values-section" style="margin-bottom: 5px;"><i class="fa-solid fa-droplet icons-breathe"></i>Precipitation: <span class="precipitation make-font-clear">--</span></p>
+									<p class="text-spacing values-section" style="margin-bottom: 5px;"><span><img style="position:relative; top:5px; margin-right:2px;" src="./images/wind.svg" width="20px"></span>Wind: <span class="wind-speed make-font-clear">--</span></p>
+									<p class="text-spacing values-section" style="margin-bottom: 5px;"><span><img  style="position:relative; top:5px; margin-right:2px;" src="./images/humidity.svg" width="20px"></span></i>Humidity: <span class="humidity make-font-clear">--</span></p>
+								</div>
+							</div>
+
+						</div>
+
+
+
+					</div>
+
+				</div>
+
+			</div>
+			</div>
+		</div>
+		<p class="text-on-white attribution">Powered by<img class="third-party-app" src='./images/weatherapi_logo.png' alt="Weather data by WeatherAPI.com"/></p>
+	</main>
+	<script src="./app.js" ></script> 
+
+</body>
+</html>

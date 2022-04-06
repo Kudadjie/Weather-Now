@@ -1,0 +1,19 @@
+{
+  "name": "full-weatherapp",
+  "version": "1.0.0",
+  "description": "- WEATHERAPI.COM - Icons for forecast provided (1) - Modal to welcome users after timeout - Reviews Section - Questions - NavBar Hamburger for Respon. Design",
+  "main": "app.js",
+  "scripts": {
+    "format":"prettier --write \"./*.{js,jsx}\"",
+    "lint": "eslint \"./*.{js,jsx}\" --quiet",
+    "dev": "parcel ./index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "parcel": "^2.4.0",
+    "prettier": "^2.6.1"
+  }
+}

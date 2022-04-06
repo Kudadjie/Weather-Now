@@ -1,0 +1,90 @@
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+	--ff: 'Raleway', sans-serif;;
+	--transition: all 0.3s linear;
+	--spacing: 0.25rem;
+	--radius: 0.5rem;
+	--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	--max-width: 1170px;
+	--fixed-width: 620px;
+  }
+  /*
+  =============== 
+  Global Styles
+  ===============
+  */
+  
+  *,
+  ::after,
+  ::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  body {
+	font-family: var(--ff);
+	line-height: 1.5;
+	font-size: 0.875rem;
+  }
+  ul {
+	list-style-type: none;
+  }
+  a {
+	text-decoration: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,span {
+	text-transform: capitalize;
+	line-height: 1.25;
+	font-family: var(--ff);
+	color:white;
+	width:fit-content;
+	height:fit-content;
+  }
+  h1 {
+	font-size: 3rem;
+  }
+  h2 {
+	font-size: 2rem;
+  }
+  h3 {
+	font-size: 1.25rem;
+  }
+  h4 {
+	font-size: 0.875rem;
+  }
+  p {
+	color: white;
+  }
+  @media screen and (min-width: 800px) {
+	h1 {
+	  font-size: 4rem;
+	}
+	h2 {
+	  font-size: 2.5rem;
+	}
+	h3 {
+	  font-size: 1.75rem;
+	}
+	h4 {
+	  font-size: 1rem;
+	}
+	body {
+	  font-size: 1rem;
+	}
+	h1,
+	h2,
+	h3,
+	h4 {
+	  line-height: 1;
+	}
+  }
