@@ -422,7 +422,7 @@ const weatherApp =  {
 		  }
 		},
 		request(callback, dataDump) {
-		  const requestUrl = `http://api.weatherapi.com/v1/forecast.json?key=${this.apiKey}&q=${callback}&days=1&aqi=no&alerts=no`;
+		  const requestUrl = `https://api.weatherapi.com/v1/forecast.json?key=${this.apiKey}&q=${callback}&days=1&aqi=no&alerts=no`;
 		  fetch(requestUrl)
 			.then((response) => {
 			  if (!response.ok) {
