@@ -3,7 +3,6 @@ export const weatherApp = {
     //Query Selectors
     loadingOrErrorModal: document.querySelector(".modal-overlay"),
     searchModal: document.querySelector(".location-search"),
-    searchBar: document.querySelector(".search-bar"),
     searchButton: document.querySelector(".search-btn"),
     loadingIcon: document.querySelector(".preloader"),
     changeLocation: document.querySelector(".location-change-click"),
