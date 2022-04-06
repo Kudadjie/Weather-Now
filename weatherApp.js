@@ -1,7 +1,7 @@
 export const weatherApp = {
     apiKey: "c1cc53b5ba214351bc9232844221703",
     //Query Selectors
-    loadingOrErrorModal: document.querySelector(".loading-screen"),
+    loadingOrErrorModal: document.querySelector(".modal-overlay"),
     searchModal: document.querySelector(".location-search"),
     searchButton: document.querySelector(".search-bar"),
     loadingIcon: document.querySelector(".preloader"),
