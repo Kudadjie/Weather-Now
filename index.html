@@ -20,19 +20,19 @@
 			</div>
 		</nav>
 	</header>
-	<!-- modal -->
-	<div class="modal-overlay loading-screen">
+	<!-- modals -->
+	<div class="modal-overlay">
 		<div class="modal-container loading-screen-modal">
 			<img class= "warning hide" src="./images/icons/warning.svg">
 			<p class="text-on-white hide internet-problem-text">An error occured<br>Please try again</p>
 			<div class="preloader">
-				<img src="./images/icons/spinner.svg" alt="spinner">
+				<img src="./images/icons/spinner.svg">
 				
 			</div>
-			<p class="allow-location-text text-on-white">Allow location access to use Weather Today</p>
+			<p class="allow-location-text text-on-white">Allow location access to use Weather Now</p>
 		</div>
 	</div>
-	<div class="modal-overlay location-search close-modal">
+	<div class="modal-overlay location-search hide">
 		<i class="fas fa-times close-btn location-close-button"></i>
 		<div class="search-location modal-container">
 			
@@ -50,9 +50,6 @@
 			
 		</div>
 	</div>
-
-
-
 	<!--End of modals-->
 	<main>
 		<div class="main-content">
@@ -67,8 +64,6 @@
 				<p class="last-updated-holder"><i>last updated <span class="last-updated"></span></i>
 					<button class="unbutton"><i class="fa-solid fa-arrow-rotate-right reload"></i></button></p>
 				<span class="span-block change-location"><img src="./images/icons/location.svg" class="location-pin"><button class="unbutton location-change-click">change location </button></span>
-
-
 				<div class="forecast-current">
 					<div id="forecast-holder">
 						<img src="./images/32/Color=On-1.svg" class="icon">
@@ -83,7 +78,6 @@
 								<div class="condition-holder">
 									<span class="condition">--</span>
 								</div>
-								
 							</div>
 							<div class="detail-view-holder">
 								<div class="detail-view left">
@@ -111,7 +105,8 @@
 		</div>
 		<p class="text-on-white attribution">Powered by<img class="third-party-app" src='./images/weatherapi_logo.png' alt="Weather data by WeatherAPI.com"/></p>
 	</main>
-	<script src="./app.js" ></script> 
+	<script src="./app.js" type="module" ></script> 
+	<script src="./weatherApp.js" type="module"></script>
 
 </body>
 </html>
