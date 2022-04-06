@@ -1,7 +1,7 @@
 {
   "name": "full-weatherapp",
   "version": "1.0.0",
-  "description": "- WEATHERAPI.COM - Icons for forecast provided (1) - Modal to welcome users after timeout - Reviews Section - Questions - NavBar Hamburger for Respon. Design",
+  "description": "Weather Now",
   "main": "app.js",
   "scripts": {
     "format":"prettier --write \"./*.{js,jsx}\"",
