@@ -59,7 +59,7 @@ function getText() {
 
 function search() {
   getText();
-  if(query == ""){
+  if(query === ""){
     weatherApp.emptyQueryError.classList.remove("hide")
   } else {
     weatherApp.closeModal(weatherApp.searchModal);
