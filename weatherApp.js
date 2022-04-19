@@ -338,10 +338,10 @@ export const weatherApp = {
     },
 
     formatQuery(input) {
-      if (typeof input == "string") {
+      if (typeof input === "string") {
         return input;
       }
-      if (typeof input == "object") {
+      if (typeof input === "object") {
         return `${input[0]},${input[1]}`;
       }
     },
