@@ -17,8 +17,8 @@ export const weatherApp = {
     optionTempUnit: document.querySelector(".option-unit"),
     currentTempUnit: document.querySelector(".current-unit"),
     temp: document.querySelector(".temp-big-text"),
-    temp_f: undefined,
-    temp_c: undefined,
+    temp_f: void 0,
+    temp_c: void 0,
     chanceOfRain: document.querySelector(".chance-of-rain"),
     sunrise: document.querySelector(".sunrise"),
     sunset: document.querySelector(".sunset"),
@@ -29,7 +29,7 @@ export const weatherApp = {
     wind: document.querySelector(".wind-speed"),
     condition: document.querySelector(".condition"),
     background: document.querySelector(".forecast-day"),
-    previousBackground: undefined,
+    previousBackground: void 0,
     updated: document.querySelector(".last-updated"),
     lastupdated: "",
     reload: document.querySelector(".reload"),
@@ -201,7 +201,7 @@ export const weatherApp = {
               this.previousBackground =
                 this.backgrounds[i].cssClassToToggle[day][0];
             }
-            if (this.previousBackground == undefined) {
+            if (typeof this.previousBackground === undefined) {
               this.previousBackground =
                 this.backgrounds[i].cssClassToToggle[day][0];
             }
