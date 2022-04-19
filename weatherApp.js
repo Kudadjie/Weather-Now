@@ -193,10 +193,10 @@ export const weatherApp = {
       for (let i in this.backgrounds) {
         for (let j in this.backgrounds[i].regex) {
           if (this.backgrounds[i].regex[j].test(conditiontext)) {
-            console.log(this.backgrounds[i].test);
-            console.log(this.previousBackground);
+            
+            
             if (this.previousBackground) {
-              console.log("Previous background");
+              
               this.background.classList.remove(this.previousBackground);
               this.previousBackground =
                 this.backgrounds[i].cssClassToToggle[day][0];
