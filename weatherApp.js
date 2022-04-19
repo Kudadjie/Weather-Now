@@ -17,8 +17,8 @@ export const weatherApp = {
     optionTempUnit: document.querySelector(".option-unit"),
     currentTempUnit: document.querySelector(".current-unit"),
     temp: document.querySelector(".temp-big-text"),
-    temp_f: void 0,
-    temp_c: void 0,
+    temp_f: null,
+    temp_c: null,
     chanceOfRain: document.querySelector(".chance-of-rain"),
     sunrise: document.querySelector(".sunrise"),
     sunset: document.querySelector(".sunset"),
@@ -29,7 +29,7 @@ export const weatherApp = {
     wind: document.querySelector(".wind-speed"),
     condition: document.querySelector(".condition"),
     background: document.querySelector(".forecast-day"),
-    previousBackground: void 0,
+    previousBackground: null,
     updated: document.querySelector(".last-updated"),
     lastupdated: "",
     reload: document.querySelector(".reload"),
@@ -230,10 +230,10 @@ export const weatherApp = {
     },
 
     changeTempUnit() {
-      if (this.optionTempUnit.textContent == "F") {
+      if (this.optionTempUnit.textContent === "F") {
         this.temp.textContent = this.temp_f;
       }
-      if (this.optionTempUnit.textContent == "C") {
+      if (this.optionTempUnit.textContent === "C") {
         this.temp.textContent = this.temp_c;
       }
       [this.optionTempUnit.textContent, this.currentTempUnit.textContent] = [
