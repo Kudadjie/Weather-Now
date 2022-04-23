@@ -29,7 +29,7 @@ export const weatherApp = {
     wind: document.querySelector(".wind-speed"),
     condition: document.querySelector(".condition"),
     background: document.querySelector(".forecast-day"),
-    previousBackground: null,
+    previousBackground: undefined,
     updated: document.querySelector(".last-updated"),
     lastupdated: "",
     reload: document.querySelector(".reload"),
@@ -201,7 +201,7 @@ export const weatherApp = {
               this.previousBackground =
                 this.backgrounds[i].cssClassToToggle[day][0];
             }
-            if (typeof this.previousBackground === undefined) {
+            if (this.previousBackground === undefined) {
               this.previousBackground =
                 this.backgrounds[i].cssClassToToggle[day][0];
             }
@@ -367,7 +367,7 @@ export const weatherApp = {
           this.getData(dataDump);
           setTimeout(() => {
             this.closeModal(this.loadingOrErrorModal);
-          }, 10000);
+          }, 7000);
         });
     },
   };

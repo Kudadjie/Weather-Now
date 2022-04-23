@@ -347,7 +347,7 @@ header {
 
 .forecast-background-to-partially-cloudy-night {
 	background-image: url("../images/weather-conditions/partially-cloudy-night.webp");
-	background-size: contain;
+	
 }
 
 .forecast-background-to-mist-fog-day {
@@ -361,11 +361,11 @@ header {
 }
 
 .forecast-background-to-snow-day {
-
+	background-image: url("../images/weather-conditions/snow-day.webp");
 }
 
 .forecast-background-to-snow-night {
-	
+	background-image: url("../images/weather-conditions/snow-night.webp");
 }
 .forecast-header {
 	display:flex;
