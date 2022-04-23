@@ -176,12 +176,15 @@ header {
 	  .preloader {
 		  position: static;
 		  margin-top:0;
+		  height: fit-content
 	  }
 
-	  .allow-location-text {
+	  .allow-location-text,.internet-problem-text {
 		position:static;
 		text-align:unset;
+		font-size:15px;
 	}
+
 
 	  .loading-screen-modal {
 		  font-size: inherit;
