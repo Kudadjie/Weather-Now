@@ -1,9 +1,7 @@
 @import url("./root.css");
 
-
 /* Formating */
 .text-spacing {
-
 	width:fit-content;
 	padding:20px 20px 5px 20px ;
 	height:fit-content;
@@ -12,25 +10,20 @@
 .temp-big-text {
 	margin-left:50px;
 	font-size: 103px;
-
 }
-
 .icons-breathe {
 	margin-right:5px;
 }
-.make-font-clear{
+.make-font-clear {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 }
-
 .unbutton {
 	background-color: inherit;
 	border: 0px;
 	color:white;
 	font-family: var(--ff);
-
 }
-
 .temp-unit {
 	margin: 0 auto;
 	font-weight: 600;
@@ -44,18 +37,8 @@
 	color:rgb(161, 161, 161)
 }
 
-.middot {
-	width:2px;
-	height:2px;
-	border:2px solid white;
-	position:relative;
-	top:18px;
-	margin: 0 15px 0 0;
-}
-
 .span-block {
 	display:block;
-	
 }
 
 .text-on-white {
@@ -64,18 +47,6 @@
 	margin: 0 auto;
 	width: fit-content;
 
-}
-
-.subscript-text {
-	font-size: 15px;
-}
-
-.superscript-text {
-	margin-right:5px;
-	position:relative;
-	bottom:25px;
-	text-decoration-line: overline;
-	font-size:15px;
 }
 
 .degree-sign {
@@ -96,7 +67,8 @@ header {
 
 /* Header */
 .logo {
-	margin: 20px 50px 0px 50px;
+	width:100%;
+	margin: 40px 50px 20px 50px;
 }
 
 /* Modal */
@@ -114,15 +86,6 @@ header {
 	bottom:140px;
   }
 
-  /*For mobile set background: white
-
-  On location-modal, set font size: 90px
-  for tablet, font-size:60px
-  On allow location text set position:relative,
-  bottom:550px and text-align:center 
-  On preloader set height:800px, position:relative,
-  bottom:750px, right:100px; margin-top:100px
-  */
   .modal-overlay {
 	position: fixed;
 	top: 0;
@@ -172,7 +135,8 @@ header {
 	text-align:center;
 }
 
-  @media screen and (min-width:820px){
+/* Desktop */
+  @media screen and (min-width:1024px){
 	  .preloader {
 		  position: static;
 		  margin-top:0;
@@ -189,6 +153,24 @@ header {
 	  .loading-screen-modal {
 		  font-size: inherit;
 	  }
+
+	  .logo {
+		  width:fit-content;
+
+	  }
+
+  }
+
+  /* Tablet */
+  @media screen and (min-width:760px) and (max-width:1024px){
+	  
+	.logo {
+		width:25%
+	}
+
+	.allow-location-text,.internet-problem-text {
+		font-size:25px;
+	}
   }
 
   /* OPEN/CLOSE MODAL */
@@ -207,7 +189,6 @@ header {
 	background: transparent;
 	color: var(--clr-primary-5);
   }
-
 
   .form {
 	  width:fit-content;
@@ -339,43 +320,43 @@ header {
 
 
 .forecast-background-to-clear-sky {
-	background-image: url("../images/weather-conditions/clear-sky.jpg");
+	background-image: url("../images/weather-conditions/clear-sky.webp");
 	background-size: cover;
 }
 
 .forecast-background-to-clear-night {
-	background-image: url("../images/weather-conditions/clear-night.jpg");
+	background-image: url("../images/weather-conditions/clear-night.webp");
 	background-size: contain;
 }
 
 
 .forecast-background-to-heavy-clouds-day {
-	background-image: url("../images/weather-conditions/heavy-clouds-day.jpg");
+	background-image: url("../images/weather-conditions/heavy-clouds-day.webp");
 	background-size: cover;
 }
 
 .forecast-background-to-heavy-clouds-night {
-	background-image: url("../images/weather-conditions/heavy-clouds-night.jpg");
+	background-image: url("../images/weather-conditions/heavy-clouds-night.webp");
 	background-size: cover;
 }
 
 .forecast-background-to-partially-cloudy-day {
-	background-image: url("../images/weather-conditions/partially-cloudy-day.jpg");
+	background-image: url("../images/weather-conditions/partially-cloudy-day.webp");
 	background-size: cover;
 }
 
 .forecast-background-to-partially-cloudy-night {
-	background-image: url("../images/weather-conditions/partially-cloudy-night.jpg");
+	background-image: url("../images/weather-conditions/partially-cloudy-night.webp");
 	background-size: contain;
 }
 
 .forecast-background-to-mist-fog-day {
-	background-image: url("../images/weather-conditions/mist-fog-day.jpg");
+	background-image: url("../images/weather-conditions/mist-fog-day.webp");
 	background-size: cover;
 }
 
 .forecast-background-to-mist-fog-night {
-	background-image: url("../images/weather-conditions/mist-fog-night.jpg");
+	background-image: url("../images/weather-conditions/mist-fog-night.webp");
 	background-size: cover;
 }
 
