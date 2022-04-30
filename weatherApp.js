@@ -321,7 +321,7 @@ export const weatherApp = {
           Number(String(object.location.localtime).match(/\s\d+/))
         ].is_day;
       this.loc.textContent = `${object.location.name},  ${object.location.region} - ${object.location.country}`;
-      this.temp.textContent = `${object.current.temp_c}`;
+      this.temp.textContent = Math.round(Number(`${object.current.temp_c}`));
       this.precipitation.textContent = `${object.current.precip_in} in`;
       this.humidity.textContent = `${object.current.humidity} %`;
       this.wind.textContent = `${object.current.wind_mph} mph`;

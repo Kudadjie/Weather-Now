@@ -59,7 +59,7 @@
 /* Tags */
 main {
 	background-image: url("../images/weather-background.svg");
-	height: 85vh;
+	height: 100vh;
 	z-index:1;
 }
 
@@ -282,7 +282,7 @@ main {
 
 .forecast-background-to-clear-night {
 	background-image: url("../images/weather-conditions/clear-night.webp");
-	background-size: contain;
+	background-size: cover;
 }
 
 
@@ -535,6 +535,10 @@ main {
 	  font-size:15px;
   	}
 
+	.forecast-background-to-clear-night {
+		background-image: url("../images/weather-conditions/clear-night.webp");
+		background-size: contain;
+	}
   .day-night-icon {
 	position:static;
 	width: 30px;
