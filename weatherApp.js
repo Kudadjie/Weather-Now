@@ -147,11 +147,11 @@ export const weatherApp = {
         cssClassToToggle: [
           [
             "forecast-background-to-snow-night",
-            "./images/32/white/32/Color=Off-for-25",
+            "./images/32/white/32/Color=Off-for-25.svg",
           ],
           [
             "forecast-background-to-snow-day",
-            "./images/32/white/32/Color=Off-for-25",
+            "./images/32/white/32/Color=Off-for-25.svg",
           ],
         ],
       },
@@ -162,11 +162,11 @@ export const weatherApp = {
         cssClassToToggle: [
           [
             "forecast-background-to-snow-night",
-            "./images/32/white/32/Color=Off-for-23",
+            "./images/32/white/32/Color=Off-for-23.svg",
           ],
           [
             "forecast-background-to-snow-day",
-            "./images/32/white/32/Color=Off-for-23",
+            "./images/32/white/32/Color=Off-for-23.svg",
           ],
         ],
       },
@@ -177,11 +177,11 @@ export const weatherApp = {
         cssClassToToggle: [
           [
             "forecast-background-to-mist-fog-night",
-            "./images/32/white/32/Color=Off-for-7",
+            "./images/32/white/32/Color=Off-for-7.svg",
           ],
           [
             "forecast-background-to-mist-fog-day",
-            "./images/32/white/32/Color=Off-for-7",
+            "./images/32/white/32/Color=Off-for-7.svg",
           ],
         ],
       },
