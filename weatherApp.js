@@ -331,8 +331,8 @@ export const weatherApp = {
       this.sunset.textContent = `${object.forecast.forecastday[0].astro.sunset}`;
       this.moonrise.textContent = `${object.forecast.forecastday[0].astro.moonrise}`;
       this.moonset.textContent = `${object.forecast.forecastday[0].astro.moonset}`;
-      this.temp_c = `${object.current.temp_c}`;
-      this.temp_f = `${object.current.temp_f}`;
+      this.temp_c = Math.round(Number(`${object.current.temp_c}`));
+      this.temp_f = Math.round(Number(`${object.current.temp_f}`));
       this.lastUpdated();
       this.toggleBackgroundAndIcon(isDay, conditiontext);
     },

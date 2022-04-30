@@ -8,8 +8,10 @@
 }
 
 .temp-big-text {
-	margin-left:50px;
+	margin-left:123px;
 	font-size: 103px;
+	margin-top:200px;
+	position:absolute;
 }
 .icons-breathe {
 	margin-right:5px;
@@ -67,8 +69,10 @@ header {
 
 /* Header */
 .logo {
-	width:100%;
-	margin: 40px 50px 20px 50px;
+	width:35%;
+	margin: 25px 0px 0px 25px;
+	/*width:100%*/
+	/*margin: 40px 50px 20px 50px;*/
 }
 
 /* Modal */
@@ -116,63 +120,26 @@ header {
 }
 
 .preloader {
-	background: transparent;
-	display: flex;
-	height: 800px;
-	width: fit-content;
-	margin:0 auto;
-	transition: opacity 0.3s linear;
-	z-index: 9999;
-	position:relative;
-	bottom:750px;
-	right:100px;
-	margin-top:100px;
+    background: transparent;
+    display: flex;
+    height: 100%;
+    width: fit-content;
+    margin: 0 auto;
+    transition: opacity 0.3s linear;
+    z-index: 9999;
+    position: relative;
+    bottom: 200px;
+    margin-top: 100px;
 }
 
 .allow-location-text {
-	position:relative;
-	bottom:550px;
-	text-align:center;
+    position: relative;
+    bottom: 200px;
+    font-size: 20px;
+    text-align: center;
+	padding:10px;
+
 }
-
-/* Desktop */
-  @media screen and (min-width:1024px){
-	  .preloader {
-		  position: static;
-		  margin-top:0;
-		  height: fit-content
-	  }
-
-	  .allow-location-text,.internet-problem-text {
-		position:static;
-		text-align:unset;
-		font-size:15px;
-	}
-
-
-	  .loading-screen-modal {
-		  font-size: inherit;
-	  }
-
-	  .logo {
-		  width:fit-content;
-
-	  }
-
-  }
-
-  /* Tablet */
-  @media screen and (min-width:760px) and (max-width:1024px){
-	  
-	.logo {
-		width:25%
-	}
-
-	.allow-location-text,.internet-problem-text {
-		font-size:25px;
-	}
-  }
-
   /* OPEN/CLOSE MODAL */
   .open-modal {
 	visibility: visible;
@@ -309,9 +276,10 @@ header {
 }
 
 .forecast-day {
-	width: 1200px;
-	height:496px;
-	border-radius: 9px;
+	/*width: 1200px;*/
+	/*height:496px;*/
+	min-height:845px;
+	/*border-radius: 9px;*/
 	z-index:3;
 	margin:0 auto;
 	box-shadow: 0px 0px 5px black;
@@ -381,8 +349,8 @@ header {
 }
 
 .day-night-icon {
-	width:30px;
-	height:30px;
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -445,11 +413,13 @@ header {
 }
 
 .forecast-current {
-	display:flex;
+	/*display:flex;
+	display:none;*/
+	position: absolute;
 }
 
 #forecast-holder {
-	padding:0px 50px;
+	/*padding:0px 50px;*/
 	width:fit-content;
 	display:flex;
 }
@@ -457,24 +427,31 @@ header {
 .icon {
 	width: 200px;
 	height:200px;
+	margin-left:25%;
+	position:absolute;
 }
 
 .temp-holder {
-	position: relative;
-	top:15px;
+	/*position: relative;
+	top:15px;*/
+	position:absolute;
+	margin-left:257px;
+	margin-top:230px;
 }
 .temp-f {
 	padding-top:5px;
 }
 
 .glass {
-	backdrop-filter: blur(10px) saturate(180%);
+	backdrop-filter: blur(3px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
 	background-color: rgb(16 19 24 / 75%);
-    border-radius: 12px;
+    /*border-radius: 12px;*/
     border: 1px solid rgba(255, 255, 255, 0.125);
 	position: relative;
-    left: 55px;
+    /*left: 55px;*/
+	top:421px;
+	width:100vw;
 }
 
 .condition-holder {
@@ -495,11 +472,11 @@ header {
 }
 
 .left {
-	margin:0 0 0 30px;
+	margin:0 0 0 20px;
 }
 
 .right {
-	margin: 0 30px 0 50px;
+	margin: 0 5px 0 70px;
 }
 
 .values-section {
@@ -533,4 +510,124 @@ header {
 	margin-left:10px;
 	position: relative;
     top: 9px;
+}
+
+
+  /* Tablet */
+  @media screen and (min-width:760px) and (max-width:1024px){
+	  
+	.logo {
+		width:25%
+	}
+
+	.icon,.temp-big-text {
+		margin-left:38%;
+	}
+
+	.temp-holder {
+		margin-left: 55%
+	}
+
+	.day-night-icon {
+		position: static;
+	}
+
+	.glass {
+		top:402px;
+	}
+
+	.detail-view-holder {
+		justify-content: space-evenly;
+	}
+
+
+	
+  }
+
+  /* Desktop */
+  @media (min-width:1024px) {
+	.preloader {
+		position: static;
+		margin-top:0;
+		height: fit-content
+	}
+
+	.allow-location-text,.internet-problem-text {
+	  position:static;
+	  text-align:unset;
+	  font-size:15px;
+  }
+
+  .day-night-icon {
+	position:static;
+	width: 30px;
+    height: 30px;
+}
+
+	.loading-screen-modal {
+		font-size: inherit;
+	}
+
+	.logo {
+		width:fit-content;
+
+	}
+
+	.icon {
+		margin-left:0;
+		width:200px;
+		height:200px;
+		position: static;
+		
+	}
+
+	.temp-big-text {
+		margin-left:70px;
+		font-size: 103px;
+		margin-top:0;
+		position:static;
+	}
+
+	.allow-location-text,.internet-problem-text {
+		font-size:25px;
+	}
+
+	.forecast-current {
+		display:flex;
+		margin-left:30px;
+	}
+
+	#forecast-holder {
+		padding:0px 50px;
+	}
+	
+	.temp-holder {
+		position: relative;
+		top:15px;
+		margin:0;
+	}
+
+	.glass {
+		border-radius: 12px;
+		left: 55px;
+		top:0;
+		width:fit-content;
+		margin-left:30px;
+	}
+
+	.left {
+		margin-left: 45px;
+	}
+
+	.right {
+		margin-right:68px;
+		margin-left:70px;
+	}
+
+	.forecast-day {
+		width: 1200px;
+		min-height:496px;
+		border-radius: 9px;
+	}
+
 }
