@@ -63,16 +63,10 @@ main {
 	z-index:1;
 }
 
-header {
-	margin-bottom:20px;
-}
-
 /* Header */
 .logo {
-	width:35%;
-	margin: 25px 0px 0px 25px;
-	/*width:100%*/
-	/*margin: 40px 50px 20px 50px;*/
+	width: 20%;
+    margin: 14px 0px 10px 25px;
 }
 
 /* Modal */
@@ -250,9 +244,6 @@ header {
 	color:#d72f2f;
 }
 
-
-
-
 .warning {
 	width:150px;
 	height:150px;
@@ -276,10 +267,7 @@ header {
 }
 
 .forecast-day {
-	/*width: 1200px;*/
-	/*height:496px;*/
 	min-height:845px;
-	/*border-radius: 9px;*/
 	z-index:3;
 	margin:0 auto;
 	box-shadow: 0px 0px 5px black;
@@ -353,7 +341,6 @@ header {
     height: 30px;
 }
 
-
 .last-updated-holder {
 	width:fit-content;
 	margin: 0 0 0 20px;
@@ -400,6 +387,7 @@ header {
 .location-change-click:hover {
 	text-decoration: underline;
 }
+
 .location-pin {
 	width:19px;
 	margin-right: 5px;
@@ -413,13 +401,10 @@ header {
 }
 
 .forecast-current {
-	/*display:flex;
-	display:none;*/
 	position: absolute;
 }
 
 #forecast-holder {
-	/*padding:0px 50px;*/
 	width:fit-content;
 	display:flex;
 }
@@ -432,8 +417,6 @@ header {
 }
 
 .temp-holder {
-	/*position: relative;
-	top:15px;*/
 	position:absolute;
 	margin-left:257px;
 	margin-top:230px;
@@ -446,10 +429,8 @@ header {
 	backdrop-filter: blur(3px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
 	background-color: rgb(16 19 24 / 75%);
-    /*border-radius: 12px;*/
     border: 1px solid rgba(255, 255, 255, 0.125);
 	position: relative;
-    /*left: 55px;*/
 	top:421px;
 	width:100vw;
 }
@@ -512,7 +493,6 @@ header {
     top: 9px;
 }
 
-
   /* Tablet */
   @media screen and (min-width:760px) and (max-width:1024px){
 	  
@@ -539,9 +519,6 @@ header {
 	.detail-view-holder {
 		justify-content: space-evenly;
 	}
-
-
-	
   }
 
   /* Desktop */
@@ -556,13 +533,13 @@ header {
 	  position:static;
 	  text-align:unset;
 	  font-size:15px;
-  }
+  	}
 
   .day-night-icon {
 	position:static;
 	width: 30px;
     height: 30px;
-}
+	}
 
 	.loading-screen-modal {
 		font-size: inherit;
@@ -570,7 +547,6 @@ header {
 
 	.logo {
 		width:fit-content;
-
 	}
 
 	.icon {
@@ -578,7 +554,6 @@ header {
 		width:200px;
 		height:200px;
 		position: static;
-		
 	}
 
 	.temp-big-text {
@@ -629,5 +604,4 @@ header {
 		min-height:496px;
 		border-radius: 9px;
 	}
-
 }
