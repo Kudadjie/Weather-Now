@@ -429,7 +429,6 @@ main {
 	backdrop-filter: blur(3px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
 	background-color: rgb(16 19 24 / 75%);
-    border: 1px solid rgba(255, 255, 255, 0.125);
 	position: relative;
 	top:421px;
 	width:100vw;
