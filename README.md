@@ -1,3 +1,1 @@
-This is a simple Vanilla Javascript (HTML & CSS) project. 
-It basically uses a weather API (weatherAPI) to get weather data based on locality or searched location and displays the info in a much more prettier way.
-Still a work in progress....
+A simple Vanilla JS app that displays the weather in a pretty way!
